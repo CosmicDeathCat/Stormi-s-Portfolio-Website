@@ -1,0 +1,24 @@
+﻿@page "/contact_page"
+<PageTitle>Contact Page</PageTitle>
+
+<h1>Contact Page</h1>
+
+<p>Please Contact me if you have work for me.</p>
+
+<div>
+    <EditForm Model="@contactForm">
+        <label for="Name">Name: </label>
+        <InputText id="Name" @bind-Value="contactForm.Name" />
+        <label for="Email">Email: </label>
+        <InputText id="Email" @bind-Value="contactForm.Email" />
+        <label for="Message">Message: </label>
+        <InputText id="Message" @bind-Value="contactForm.Message" />
+        <button type="submit">Submit</button>
+
+    </EditForm>
+</div>
+
+
+@code {
+    
+}

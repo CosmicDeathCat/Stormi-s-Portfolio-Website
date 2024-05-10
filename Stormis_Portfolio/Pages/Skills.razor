@@ -1,56 +1,385 @@
 ﻿@page "/skills"
-
+@inject IJSRuntime JS
 <PageTitle>Skills</PageTitle>
 
 <div class="skills-container center">
-    <h1>Skills</h1>
-    <hr class="hr1">
+<h1>Skills</h1>
+<hr class="hr1">
 
-    <div class="skills-grid">
-        <!-- Programming Languages -->
-        <div class="skills-category">
-            <h2>Programming Languages</h2>
-            <!-- Skill Item: C# -->
-            <div class="skill-item" data-tooltip="C# is a versatile language used in my .NET projects.">
-                <h3>C#</h3>
-                <div class="stars">
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart"></span>
-                </div>
-            </div>
-            <div class="skill-item" data-tooltip="C++ a fast powerful low level language">
-                <h3>C++</h3>
-                <div class="stars">
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart"></span>
-                    <span class="oi oi-heart"></span>
-                </div>
-            </div>
-            <div class="skill-item" data-tooltip="Java is a versatile language used in cross-platform applications.">
-                <h3>Java</h3>
-                <div class="stars">
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart"></span>
-                </div>
-            </div>
-            <div class="skill-item" data-tooltip="Widely used web programming language.">
-                <h3>JavaScript</h3>
-                <div class="stars">
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart checked"></span>
-                    <span class="oi oi-heart"></span>
-                    <span class="oi oi-heart"></span>
-                    <span class="oi oi-heart"></span>
-                </div>
-            </div>
+<div class="skills-grid">
+<!-- Programming Languages -->
+<div class="skills-category">
+    <h2>Programming Languages</h2>
+    <!-- Skill Item: C# -->
+    <div class="skill-item" data-tooltip="C# is a versatile language used in my .NET projects.">
+        <h3>C#</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="C++ a fast powerful low level language">
+        <h3>C++</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Java is a versatile language used in cross-platform applications.">
+        <h3>Java</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="HTML is a popular markup language used to create websites.">
+        <h3>HTML</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="CSS is a popular styling language used to create websites.">
+        <h3>CSS</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Widely used web programming language.">
+        <h3>JavaScript</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
         </div>
     </div>
 </div>
+<!-- Frameworks -->
+<div class="skills-category">
+    <h2>Frameworks</h2>
+    <!-- Skill Item: C# -->
+    <div class="skill-item" data-tooltip=".Net Maui is a cross-platform framework for building mobile applications. Using C#, XAML, and .Net">
+        <h3>.Net Maui</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Xamarin is a framework used to build mobile applications. Using C#.">
+        <h3>Xamarin</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Unity is a popular game engine that can create 2D and 3D games. Using C#.">
+        <h3>Unity</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Blazor is a web framework that allows you to build interactive web applications.Using C#, HTML, JavaScript, and CSS.">
+        <h3>Blazor</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip=".Net is a framework used to build web applications.">
+        <h3>.Net</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Swing is a framework used to build desktop applications. Using Java.">
+        <h3>Swing</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Winforms is a framework used to build desktop applications. Using C#.">
+        <h3>Winforms</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="WPF is a framework used to build desktop applications. Using C#.">
+        <h3>WPF</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Unreal Engine is a powerful game engine that can create 3D games. Using C++.">
+        <h3>Unreal Engine</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+</div>
+<!-- Tools -->
+<div class="skills-category">
+    <h2>Tools</h2>
+    <!-- Skill Item: C# -->
+    <div class="skill-item" data-tooltip="Rider is a cross-platform IDE for .NET.">
+        <h3>Rider</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="IntelliJ is a popular IDE for Java.">
+        <h3>IntelliJ</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="WebStorm is a popular IDE for web development.">
+        <h3>WebStorm</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Visual Studio Code is a popular code editor.">
+        <h3>Visual Studio</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="ReSharper is a popular Visual Studio extension.">
+        <h3>ReSharper</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Clion is a popular IDE for C++.">
+        <h3>Clion</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="GitKracken is a popular Git client.">
+        <h3>GitKracken</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Git is a popular version control system.">
+        <h3>Git</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+</div>
+<!-- Soft Skills -->
+<div class="skills-category">
+    <h2>Soft Skills</h2>
+    <!-- Skill Item: C# -->
+    <div class="skill-item" data-tooltip="I communicate effectively with team members and clients.">
+        <h3>Communication</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="I will work hard to complete the task, and work well with my team.">
+        <h3>Work Ethic</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="I will lead a team with the goals of the team in mind.">
+        <h3>Leadership</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Project Management is the process of leading a team to complete a project.">
+        <h3>Project Management</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+</div>
+<!-- Methodologies -->
+<div class="skills-category">
+    <h2>Methodologies</h2>
+    <!-- Skill Item: C# -->
+    <div class="skill-item" data-tooltip="Agile is a methodology that uses an iterative approach to complete a project.">
+        <h3>Agile</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Kanban methodology uses a visual board to manage tasks.">
+        <h3>Kanban</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Scrum methodology uses sprints to complete a project lead by a Scrum Master.">
+        <h3>Scrum</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+    <div class="skill-item" data-tooltip="Waterfall methodology uses a linear approach to complete a project.">
+        <h3>Waterfall</h3>
+        <div class="stars">
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart checked"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+            <span class="oi oi-heart"></span>
+        </div>
+    </div>
+</div>
+<!-- Will learn soon -->
+<div class="skills-category">
+    <h2>Will Learn Soon</h2>
+    <div class="skill-item" data-tooltip="Python is a versatile language used in web development, data science, and more.">
+        <h3>Python</h3>
+    </div>
+    <div class="skill-item" data-tooltip="SQL is a language used to manage databases.">
+        <h3>SQL</h3>
+    </div>
+    <div class="skill-item" data-tooltip="React is a popular JavaScript library used to build user interfaces.">
+        <h3>React</h3>
+    </div>
+    <div class="skill-item" data-tooltip="Angular is a popular JavaScript framework used to build web applications.">
+        <h3>Angular</h3>
+    </div>
+    <div class="skill-item" data-tooltip="AWS is a cloud computing platform made by Amazon.">
+        <h3>AWS</h3>
+    </div>
+    <div class="skill-item" data-tooltip="Azure is a cloud computing platform made by Microsoft.">
+        <h3>Azure</h3>
+    </div>
+    <div class="skill-item" data-tooltip="Rust is a fast, memory-safe systems programming language.">
+        <h3>Rust</h3>
+    </div>
+    <div class="skill-item" data-tooltip="Docker is a platform for developing, shipping, and running applications.">
+        <h3>Docker</h3>
+    </div>
+</div>
+</div>
+</div>
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initSkillsPage");
+        }
+    }
+}
