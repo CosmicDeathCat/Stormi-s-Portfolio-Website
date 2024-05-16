@@ -1,24 +1,44 @@
 ﻿@page "/contact_page"
+@using Stormis_Portfolio.Enums
+
 <PageTitle>Contact Page</PageTitle>
-
-<h1>Contact Page</h1>
-
-<p>Please Contact me if you have work for me.</p>
-
-<div>
-    <EditForm Model="@contactForm">
-        <label for="Name">Name: </label>
-        <InputText id="Name" @bind-Value="contactForm.Name" />
-        <label for="Email">Email: </label>
-        <InputText id="Email" @bind-Value="contactForm.Email" />
-        <label for="Message">Message: </label>
-        <InputText id="Message" @bind-Value="contactForm.Message" />
-        <button type="submit">Submit</button>
-
+<div class="greeting">
+    <h1>Contact Page</h1>
+    <p>Please contact me if you have work for me.</p>
+</div>
+<div class="form-container">
+    <EditForm class="contact-form" OnValidSubmit="HandleValidSubmit" Model="@contactForm">
+        <DataAnnotationsValidator />
+        <ValidationSummary/>
+        <div class="input-group">
+            <label class="form-label" for="Name">Name:</label>
+            <InputText class="input-text" id="Name" @bind-Value="contactForm.Name" />
+        </div>
+        <div class="input-group">
+            <label class="form-label" for="Email">Email:</label>
+            <InputText class="input-text" id="Email" @bind-Value="contactForm.Email" />
+        </div>
+        <div class="input-group">
+            <label class="form-label" for="Subject">Subject:</label>
+            <InputText class="input-text" id="Subject" @bind-Value="contactForm.Subject" />
+        </div>
+        <div class="input-group">
+            <label class="form-label" for="Message">Message:</label>
+            <textarea class="input-textarea" id="Message" @bind="contactForm.Message"></textarea>
+        </div>
+        <div class="input-group">
+            <label class="form-label" for="PhoneNumber">Phone Number:</label>
+            <InputText class="input-text" id="PhoneNumber" @bind-Value="contactForm.PhoneNumber" />
+        </div>
+        <div class="input-group">
+            <label class="form-label" for="ContactReason">Contact Reason:</label>
+            <InputSelect class="input-select" id="ContactReason" @bind-Value="contactForm.ContactReason">
+                @foreach (var reason in Enum.GetValues<ContactReasons>())
+                {
+                <option value="@reason">@reason</option>
+                }
+            </InputSelect>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
     </EditForm>
 </div>
-
-
-@code {
-    
-}

@@ -1,0 +1,160 @@
+﻿.projectarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    color: antiquewhite;
+    background-color: #060606;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.wildatheart {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.lostdreams {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.oceanscall {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.luminous {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.werelive {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cloudadventures {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cubedtodeath {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slimemania {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.afterlife {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Catnapsleepjournal {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mytinyshoppinghelper {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cplusplusfinalproject {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.puppytasks {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pixelengineforunity {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: steelblue;
+}
+
+a:hover {
+    color: cadetblue;
+}
