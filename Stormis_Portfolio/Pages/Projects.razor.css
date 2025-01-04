@@ -1,31 +1,12 @@
-﻿.projectheading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: antiquewhite;
-    background-color: #060606;
-    margin-left: 800px;
-    margin-right: 800px;
-    opacity: 0.8;
-    border-radius: 20px;
-    font-family: "Poetsen One", sans-serif;
-}
-
-.projectarea {
+﻿.projectarea {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 10rem;
     color: antiquewhite;
     background-color: #060606;
-    margin-left: 300px;
-    margin-right: 300px;
     opacity: 0.8;
     border-radius: 20px;
 }
@@ -170,73 +151,10 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 480px) {
-    .projectarea {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .wildatheart {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .lostdreams {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .oceanscall {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .luminous {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .werelive {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .cloudadventures {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .cubedtodeath {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .slimemania {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .afterlife {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .Catnapsleepjournal {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .mytinyshoppinghelper {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .cplusplusfinalproject {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .puppytasks {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .pixelengineforunity {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
-
 a {
-    color: cornflowerblue;
+    color: steelblue;
 }
 
 a:hover {
-    color: deepskyblue;
+    color: cadetblue;
 }

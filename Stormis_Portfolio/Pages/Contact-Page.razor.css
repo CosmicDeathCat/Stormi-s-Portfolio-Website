@@ -9,7 +9,7 @@ body, html {
     align-items: center; /* Center vertically */
     background-color: #192734; /* Background color */
     color: #ffffff;
-    font-family: Quicksand, sans-serif; /* Font family */
+    font-family: Arial, sans-serif;
 }
 
 /* Styling for the greeting */
@@ -17,29 +17,8 @@ body, html {
     font-size: 2rem;
     font-weight: bold;
     color: #ffffff;
-    font-family: "Poetsen One", sans-serif;
     margin-bottom: 1rem;
     text-align: center;
-}
-
-.thankyou {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff;
-    font-family: "Poetsen One", sans-serif;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: auto;
-    vertical-align: center;
-    background-color: #060606;
-    opacity: 0.8;
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /* Enhanced styling for the form container */
@@ -111,7 +90,7 @@ body, html {
 
 /* Hover effect for the submit button */
 .submit-button:hover {
-    background-color: #04D9B2;
+    background-color: #45a049;
 }
 
 /* Responsive adjustments */
